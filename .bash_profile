@@ -40,5 +40,13 @@ function cs {
     ls;
 }
 
+function sshhosts {
+    cat ~/.ssh/config | grep 'Host ';
+}
+
+function sshdetail {
+    grep -i -A 4 $1 ~/.ssh/config
+}
+
 export NVM_DIR="/Users/dylan/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm

@@ -13,5 +13,3 @@ alias grep="grep --color=auto"
 
 ## Use a long listing format ##
 alias ll="ls -lah"
-
-alias sshhosts="cat ~/.ssh/config | grep 'Host '"
