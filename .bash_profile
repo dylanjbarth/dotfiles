@@ -39,3 +39,6 @@ function cs {
     cd $1;
     ls;
 }
+
+export NVM_DIR="/Users/dylan/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
