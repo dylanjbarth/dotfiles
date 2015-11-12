@@ -1,6 +1,8 @@
 {
 	"color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
+	"detect_slow_plugins": false,
 	"font_size": 12.0,
+	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
 		"Vintage"
@@ -11,7 +13,5 @@
 		79
 	],
 	"translate_tabs_to_spaces": true,
-	"trim_trailing_white_space_on_save": true,
-	"detect_slow_plugins_setting": false,
-	"highlight_modified_tabs": true
+	"trim_trailing_white_space_on_save": true
 }
