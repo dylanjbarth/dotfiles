@@ -1,1 +1,7 @@
-export PATH=$PATH:/Users/dylan/bin
+# GI Path
+export PYTHONPATH=~/hacking/growthintel:$PYTHONPATH
+
+export PATH=$PATH:/usr/local/sbin:/Users/dylan/bin
+
+# Mooo
+COWPATH="$COWPATH:$HOME/.cowsay"

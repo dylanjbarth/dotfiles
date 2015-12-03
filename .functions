@@ -1,0 +1,21 @@
+function tunnel {
+    echo "ssh -f <server_name> -L <local_port>:localhost:<remote_port> -N"
+    ssh -f $1 -L $2:localhost:$3 -N
+}
+
+function psgrep {
+    ps aux | grep $1
+}
+
+function cs {
+    cd $1;
+    ls;
+}
+
+function sshhosts {
+    cat ~/.ssh/config | grep 'Host ';
+}
+
+function sshdetail {
+    grep -i -A 4 $1 ~/.ssh/config
+}

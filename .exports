@@ -1,0 +1,10 @@
+# Add virtualenv paths
+export WORKON_HOME=$HOME/.virtualenvs
+export PROJECT_HOME=$HOME/hacking
+source /usr/local/bin/virtualenvwrapper.sh
+
+export NVM_DIR="/Users/dylan/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+# DISABLE ansible cows
+export ANSIBLE_NOCOWS=1
