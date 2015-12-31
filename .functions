@@ -19,3 +19,7 @@ function sshhosts {
 function sshdetail {
     grep -i -A 4 $1 ~/.ssh/config
 }
+
+function find_pi {
+    nmap -sn $1/24 | grep 'raspberrypi'
+}
