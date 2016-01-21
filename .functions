@@ -23,3 +23,11 @@ function sshdetail {
 function find_pi {
     ipconfig getifaddr en1 | sed 's/[0-9]*$/0/' | nmap -sn $(sed)/24 | grep 'raspberrypi'
 }
+
+function hack {
+    if [[ -z $1 ]]; then
+        cd /Users/dylan/hacking/growthintel;
+    else
+        cd /Users/dylan/hacking/growthintel/$1;
+    fi
+}
