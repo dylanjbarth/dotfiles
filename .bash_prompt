@@ -48,7 +48,7 @@ function git_info() {
 	# check if it's dirty (via github.com/sindresorhus/pure)
 	dirty=$(git diff --quiet --ignore-submodules HEAD &>/dev/null; [ $? -eq 1 ]&& echo -e "*")
 
-	echo $WHITE" on "$PURPLE$branch$dirty
+	echo "${PURPLE} branch${WHITE}="$ORANGE$branch$dirty
 }
 
 # Only show username/host if not default
@@ -56,4 +56,10 @@ function usernamehost() {
 	if [ $USER != $default_username ]; then echo "${MAGENTA}$USER ${PURPLE}at ${ORANGE}$HOSTNAME $WHITEin "; fi
 }
 
-PS1="\[\e]2;$PWD\[\a\]\[\e]1;\]$(basename "$(dirname "$PWD")")/\W\[\a\]${BOLD}\$(usernamehost)\[$MAGENTA\]\w\$(git_info)\[$PURPLE\]\n\$ \[$RESET\]"
+function deskname() {
+	if [ $DESK_NAME ]; then
+		echo " ${PURPLE}desk${WHITE}=${ORANGE}$DESK_NAME${PURPLE}"
+	fi
+}
+
+PS1="\[\e]2;$PWD\[\a\]\[\e]1;\]$(basename "$(dirname "$PWD")")/\W\[\a\]${BOLD}\$(usernamehost)\[$MAGENTA\]\w\$(git_info)\[$PURPLE\]$(deskname)\n\$ \[$RESET\]"
