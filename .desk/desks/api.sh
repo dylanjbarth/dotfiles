@@ -4,3 +4,4 @@
 #
 
 cd ~/hacking/growthintel/api
+workon api
