@@ -4,5 +4,5 @@
 #
 
 cd ~/hacking/growthintel/thug_lyf
-workon thug_lyf
+workon thug
 
