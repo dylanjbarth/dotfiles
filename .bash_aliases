@@ -10,6 +10,3 @@ alias grep="grep --color=auto"
 
 ## Use a long listing format ##
 alias ll="ls -lah"
-
-# https://github.com/vdemedes/gifi
-alias npm="gifi"

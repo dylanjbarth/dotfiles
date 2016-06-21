@@ -38,12 +38,3 @@ HISTCONTROL="erasedups:ignoreboth"
 export HISTIGNORE="&:[ ]*:exit:ls:bg:fg:history:clear"
 # Useful timestamp format
 HISTTIMEFORMAT='%F %T '
-
-## BETTER DIRECTORY NAVIGATION ##
-# Prepend cd to directory names automatically
-shopt -s autocd
-# Correct spelling errors during tab-completion
-shopt -s dirspell
-# Correct spelling errors in arguments supplied to cd
-shopt -s cdspell
-
