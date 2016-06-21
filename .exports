@@ -1,6 +1,6 @@
 # Add virtualenv paths
 export WORKON_HOME=$HOME/.virtualenvs
-export PROJECT_HOME=$HOME/hacking
+export PROJECT_HOME=$HOME/projects
 source /usr/local/bin/virtualenvwrapper.sh
 
 export NVM_DIR="/Users/dylan/.nvm"

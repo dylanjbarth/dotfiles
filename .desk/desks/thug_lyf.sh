@@ -3,6 +3,6 @@
 # Description: desk for doing work on the thug_lyf.
 #
 
-cd ~/hacking/growthintel/thug_lyf
+cd ~/projects/growthintel/thug_lyf
 workon thug
 

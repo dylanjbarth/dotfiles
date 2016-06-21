@@ -26,8 +26,8 @@ function find_pi {
 
 function hack {
     if [[ -z $1 ]]; then
-        cd /Users/dylan/hacking/growthintel;
+        cd /Users/dylan/projects/growthintel;
     else
-        cd /Users/dylan/hacking/growthintel/$1;
+        cd /Users/dylan/projects/growthintel/$1;
     fi
 }

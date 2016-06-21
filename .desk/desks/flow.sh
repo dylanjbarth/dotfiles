@@ -3,6 +3,6 @@
 # Description: desk for doing work on the flow.
 #
 
-cd ~/hacking/growthintel/flow
+cd ~/projects/growthintel/flow
 workon newCh
 

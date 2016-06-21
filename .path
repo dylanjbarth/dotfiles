@@ -1,7 +1,7 @@
 # GI Path
-export PYTHONPATH=~/hacking/growthintel:$PYTHONPATH
+export PYTHONPATH=~/projects/growthintel:$PYTHONPATH
 
-export PATH=$PATH:/usr/local/sbin:/Users/dylan/bin
+export PATH=$PATH:/usr/local/sbin:/Users/dylan/bin:/usr/local/bin
 
 # Mooo
 COWPATH="$COWPATH:$HOME/.cowsay"

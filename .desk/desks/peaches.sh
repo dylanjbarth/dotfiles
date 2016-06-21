@@ -3,6 +3,6 @@
 # Description: desk for doing work on the peaches.
 #
 
-cd ~/hacking/growthintel/peaches
+cd ~/projects/growthintel/peaches
 workon peaches
 
