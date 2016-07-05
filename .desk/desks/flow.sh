@@ -4,5 +4,5 @@
 #
 
 cd ~/projects/growthintel/flow
-workon newCh
+workon flow
 
