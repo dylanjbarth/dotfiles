@@ -2,13 +2,10 @@
 # * ~/.path can be used to extend `$PATH`.
 # * ~/.extra can be used for other settings you don’t want to commit.
 for file in ~/.{path,bash_prompt,exports,bash_aliases,functions,extra}; do
+    echo "sourcing $file"
     [ -r "$file" ] && [ -f "$file" ] && source "$file"
 done
 unset file
-
-# Hook for desk activation
-[ -n "$DESK_ENV" ] && source "$DESK_ENV" || true
-
 
 ###
 # thanks https://github.com/mrzool/bash-sensible
@@ -38,3 +35,13 @@ HISTCONTROL="erasedups:ignoreboth"
 export HISTIGNORE="&:[ ]*:exit:ls:bg:fg:history:clear"
 # Useful timestamp format
 HISTTIMEFORMAT='%F %T '
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# load virtualenvwrapper
+source /usr/local/bin/virtualenvwrapper.sh
+
+# branch completion
+source ~/.git-completion.bash

@@ -1,7 +1,6 @@
 # Add virtualenv paths
 export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/projects
-source /usr/local/bin/virtualenvwrapper.sh
 
 export NVM_DIR="/Users/dylan/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -31,3 +30,12 @@ export MANPAGER="less -X"
 
 # Always enable colored `grep` output
 export GREP_OPTIONS="--color=auto"
+
+# don't write python bytecode to disk (bye bye pyc!)
+export PYTHONDONTWRITEBYTECODE=1
+
+# ionic / cordova
+export ANDROID_HOME=~/Library/Android/sdk/
+
+# go!
+export GOPATH=/Users/dylan/projects/csi
